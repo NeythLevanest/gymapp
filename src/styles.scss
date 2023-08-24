@@ -1,0 +1,13 @@
+:root {
+    --black-one-color: #1b1a1c;
+    --black-two-color: #262424;
+    --sky-color: #4cb2d5;
+    --blue-black-color: #3c4873;
+    /* ... más variables de colores si es necesario ... */
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Estilo para el fondo oscuro de fondo del modal */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}

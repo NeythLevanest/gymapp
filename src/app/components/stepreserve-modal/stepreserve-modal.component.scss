@@ -1,0 +1,26 @@
+/* Estilo para el cuerpo del modal */
+.modal-body {
+    padding: 20px;
+  }
+  
+  /* Estilo para los botones de navegación */
+  .modal-footer button {
+    margin-right: 10px;
+  }
+  
+  /* Estilo para el título del paso */
+  .modal-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para el contenido del paso */
+  .modal-body p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .hiddenModalStepReserve
+  {
+    display: none;
+  }

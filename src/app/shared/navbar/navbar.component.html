@@ -1,0 +1,25 @@
+<div class="navbar">
+    <div class="navbar-logo">
+      <img src="https://static.wixstatic.com/media/15d017_4365f1eadce54a10af2fd728e6c7fd4c~mv2.png/v1/fill/w_151,h_54,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO-EFIT-WEB.png" alt="Gym">
+    </div>
+    <div class="navbar-links">
+      <!-- <a href="#">Pull Requests</a>
+      <a href="#">Issues</a>
+      <a href="#">Marketplace</a>
+      <a href="#">Explore</a> -->
+    </div>
+    <button mat-icon-button [matMenuTriggerFor]="profileMenu" class="profile-button">
+        <span>{{nameToLookup}}</span>
+    </button>
+    <mat-menu #profileMenu="matMenu" xPosition="before">
+      <button mat-menu-item>
+        <span>Perfil</span>
+      </button>
+      <button mat-menu-item>
+        <span>Configuración</span>
+      </button>
+      <button mat-menu-item (click)="_authenticationService.logoutUser()">
+        <span>Cerrar Sesión</span>
+      </button>
+    </mat-menu>
+  </div>

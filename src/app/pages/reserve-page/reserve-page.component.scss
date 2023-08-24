@@ -1,0 +1,22 @@
+.profile-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #141414;
+    color: white;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    padding: 20px;
+  }
+  
+  .menu-title {
+    font-size: 44px;
+    margin-bottom: 1rem;
+  }
+  

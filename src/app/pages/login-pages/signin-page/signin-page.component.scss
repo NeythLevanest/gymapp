@@ -1,0 +1,183 @@
+/* Alineación y estilo general del formulario */
+// .screem
+// {
+//     background-color: var(--black-one-color);
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+// }
+.screem {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscurecido con opacidad */
+    z-index: -1; /* Coloca el fondo detrás de otros elementos */
+  }
+  
+  .screem img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para llenar el contenedor */
+    z-index: -2; /* Coloca la imagen detrás del fondo y el formulario */
+  }
+
+  .logo-img
+  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .logo-img img
+  {
+    list-style: none !important;
+    width: 20rem !important;
+    height: auto;
+    z-index: 100;
+  }
+  
+ .form-container {
+     background-color: rgba(var(--black-two-color), 0.7);
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+     width: 90%;
+     max-width: 400px;
+     margin: 0 auto;
+     text-align: center;
+   }
+ 
+  h2 {
+    margin-bottom: 20px;
+    color: white; /* Color azul similar a Facebook */
+  }
+  hr
+  {
+    color: white;
+  }
+  /* Estilos para los campos de entrada */
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para el botón de inicio de sesión */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--sky-color);;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: var(--blue-black-color);; /* Color de resalte al pasar el ratón */
+  }
+  
+  /* Estilo para el enlace de "Olvidaste tu contraseña" */
+  .forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: var(--sky-color);;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+ /* Estilo para el botón de registro con fondo negro y letras blancas */
+ .register-button {
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  
+  .register-button:hover {
+    background-color: #444; /* Color oscuro al pasar el ratón */
+    transform: scale(1.02); /* Efecto de escala al pasar el ratón */
+  }
+  
+  /* Estilo para el enlace de registro */
+  .register-link {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--sky-color);;
+    font-size: 14px;
+  }
+  
+  
+ 
+  .register-button:hover {
+    background-color: #222; /* Color oscuro al pasar el ratón */
+    transform: scale(1.02); /* Efecto de escala al pasar el ratón */
+  }
+
+  /* Estilos para el loader */
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Asegúrate de que el loader esté en la parte superior */
+}
+
+/* Estilos para el spinner */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1); /* Borde claro del spinner */
+  border-top: 4px solid #1877f2; /* Color del spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

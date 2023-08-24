@@ -1,0 +1,49 @@
+
+            <!--tr *ngFor="let timeSlot of timeSlots">
+                <td>{{ timeSlot.startTime }} - {{ timeSlot.endTime }}</td>
+                <td
+                  *ngFor="let day of days"
+                  (click)="reserveSlot(day, timeSlot)"
+                  [ngClass]="{ 'reserved': isReserved(day, timeSlot), 'clickable': !isReserved(day, timeSlot) }"
+                >
+                  {{ isReserved(day, timeSlot) ? 'Reservado' : 'Disponible' }}
+                </td>
+              </tr-->
+
+
+              <!--tr *ngFor="let timeSlot of timeSlots">
+                <td>{{ timeSlot.startTime }} - {{ timeSlot.endTime }}</td>
+                <td *ngFor="let day of days" class="slot-cell">
+                  <div class="slot" [ngClass]="{ 'reserved': isReserved(day, timeSlot) }" (click)="reserveSlot(day, timeSlot)">
+                    {{ getReservationCount(day, timeSlot) }}/4
+                  </div>
+                </td>
+              </tr-->
+
+<div class="container-fluid mt-4 dark-mode">
+  <h1 class="text-center mb-4">Horario Semanal</h1>
+  <div class="d-flex justify-content-center mb-3">
+    <button class="btn btn-primary mr-2" (click)="previousWeek()">Semana Anterior</button>
+    <button class="btn btn-primary" (click)="nextWeek()">Semana Siguiente</button>
+  </div>
+  <div [@fadeInOut] class="table-responsive">
+    <table class="table table-bordered table-dark">
+      <thead>
+        <tr>
+          <th></th>
+          <th *ngFor="let day of days">{{ day | date: 'E dd/MM' }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let timeSlot of timeSlots">
+          <td>{{ timeSlot.startTime }} - {{ timeSlot.endTime }}</td>
+          <td *ngFor="let day of days" class="slot-cell">
+            <div class="slot" [ngClass]="{ 'reserved': isReserved(day, timeSlot) }" (click)="reserveSlot(day, timeSlot)">
+              {{ getReservationCount(day) }}/4
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

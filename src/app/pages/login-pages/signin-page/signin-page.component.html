@@ -1,0 +1,27 @@
+<div class="screem">
+    <div class="background"></div>
+    <img src="https://static.wixstatic.com/media/15d017_2ab9771919b74d7eae7b5353080d274e~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_1899,h_434,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/15d017_2ab9771919b74d7eae7b5353080d274e~mv2_d_5472_3648_s_4_2.jpg" alt="Imagen de fondo">
+   
+    <div class="form-container col-sm-6">
+      <div class="loader" *ngIf="isLoading">
+        <div class="spinner"></div>
+      </div>
+        <h2>Iniciar sesión</h2>
+        <form [formGroup]="formSignIn" (ngSubmit)="onSubmit()">
+          <label for="username">Correo electrónico o teléfono:</label>
+          <input type="text" id="username" name="username" formControlName="username" required>
+      
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" formControlName="password" required>
+      
+          <button type="submit">Iniciar sesión</button>
+         
+        </form>
+
+        <a class="forgot-password" href="#">¿Olvidaste tu contraseña?</a>
+        <hr>
+        <p class="register-link">¿No tienes una cuenta? <button class="register-button" (click)="openRegisterModal()">Registrarse</button></p>
+      </div>
+</div>
+
+<app-signup-page></app-signup-page>

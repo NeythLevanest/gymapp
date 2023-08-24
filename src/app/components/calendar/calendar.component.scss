@@ -1,0 +1,162 @@
+// .container-fluid {
+//   padding: 15px;
+// }
+
+// .btn {
+//   font-size: 14px;
+// }
+
+// .table {
+//   font-size: 14px;
+// }
+
+// .table th,
+// .table td {
+//   text-align: center;
+// }
+
+// .table-bordered td {
+//   border: 1px solid #dee2e6;
+// }
+
+// .table-striped tbody tr:nth-of-type(odd) {
+//   background-color: #f8f9fa;
+// }
+
+// .reserved {
+//   background-color: #0055ff;
+//   color: white;
+// }
+
+// .clickable {
+//   cursor: pointer;
+// }
+
+// .container {
+//   max-width: 800px;
+//   margin: 0 auto;
+// }
+
+// .table {
+//   table-layout: fixed;
+// }
+
+// .slot-cell {
+//   width: calc(100% / 8); /* Adjust based on your needs */
+//   text-align: center;
+// }
+
+// .slot {
+//   padding: 8px;
+//   border: 1px solid #ccc;
+//   cursor: pointer;
+// }
+
+// .reserved {
+//   background-color: #4eaaf0;
+//   color: white;
+// }
+
+// .slot:hover {
+//   background-color: #d9edf7;
+// }
+
+// .slot.reserved:hover {
+//   background-color: #5bacc3;
+// }
+
+// .container {
+//   max-width: 800px;
+//   margin: 0 auto;
+// }
+
+
+
+// @media (max-width: 576px) {
+//   .btn {
+//     font-size: 12px;
+//   }
+
+//   .table {
+//     font-size: 12px;
+//   }
+// }
+
+.container-fluid {
+  padding: 15px;
+}
+
+.dark-mode {
+  background-color: #171717;
+  color: #fff;
+}
+
+.btn {
+  font-size: 14px;
+}
+
+.table-dark {
+  font-size: 14px;
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+.table-bordered td {
+  border: 1px solid #444;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #2c2c2c;
+}
+
+.reserved {
+  background-color: #0055ff;
+  color: white;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.table {
+  table-layout: fixed;
+}
+
+.slot-cell {
+  width: calc(100% / 8);
+  text-align: center;
+}
+
+.slot {
+  padding: 8px;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+
+.reserved {
+  background-color: #4eaaf0;
+  color: white;
+}
+
+.slot:hover {
+  background-color: #444;
+}
+
+.slot.reserved:hover {
+  background-color: #5bacc3;
+}
+
+@media (max-width: 576px) {
+  .btn {
+    font-size: 12px;
+  }
+
+  .table-dark {
+    font-size: 12px;
+  }
+}
